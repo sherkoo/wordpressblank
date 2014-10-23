@@ -7,7 +7,7 @@
 <body>
 
   <header role="banner">
-    header
+    <h1 id="logo"><a href="#"><?php echo get_bloginfo('name'); ?></a></h1>
     <nav role="navigation">
       <ul>
         <li><a href="#">link</a></li>
