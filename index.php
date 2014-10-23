@@ -7,8 +7,8 @@
       <?php while ( have_posts() ) : the_post(); ?>    
       <article>
         <header>
-          <h2><?php the_title(); ?></h2>
-          <time pubdate timedate="<?php get_the_time(); ?> "><?php get_the_time(); ?> </time>
+          <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <small><time pubdate timedate="<?php the_date('Y-m-d'); ?>"><?php echo the_date('Y-m-d'); ?></time></small>
         </header>
         <p><?php the_content(); ?></p>
       </article>
