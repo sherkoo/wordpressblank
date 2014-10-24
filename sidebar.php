@@ -1,10 +1,3 @@
 <aside>
-  <ul>
-    <li>list item</li>
-    <li>list item</li>
-    <li>list item</li>
-    <li>list item</li>
-    <li>list item</li>
-    <li>list item</li>
-  </ul>
+  <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1')) ?>
 </aside>
