@@ -1,5 +1,5 @@
 <header>
   <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <small><time pubdate timedate="<?php the_date('Y-m-d'); ?>"><?php echo the_date('Y-m-d'); ?></time></small>
+  <small><time datetime="<?php the_date('Y-m-d'); ?>"><?php the_time('M j, Y') ?></time></small>
 </header>
-<p><?php the_content(); ?></p>
+<?php the_content(); ?>

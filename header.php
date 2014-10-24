@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><?php echo get_bloginfo('name'); ?></title>
+  <title><?php the_title(); ?> - <?php echo get_bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>
 <body>
