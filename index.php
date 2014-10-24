@@ -4,14 +4,22 @@
 <main role="main">
   <section>
     <?php if ( have_posts() ) : ?>
-      <?php while ( have_posts() ) : the_post(); ?>    
+      <?php while ( have_posts() ) : the_post(); ?>
+
       <article>
-        <header>
-          <h2><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <small><time pubdate timedate="<?php the_date('Y-m-d'); ?>"><?php echo the_date('Y-m-d'); ?></time></small>
-        </header>
-        <p><?php the_content(); ?></p>
+        <?php if(is_page()) : ?>
+          <?php get_template_part('inc/page'); ?>
+        <?php endif; ?>
+
+        <?php if(is_single()) : ?>
+          <?php get_template_part('inc/single'); ?>
+        <?php endif; ?>
+
+        <?php if(is_home()) : ?>
+          <?php get_template_part('inc/home'); ?>
+        <?php endif; ?>
       </article>
+
       <?php endwhile; ?>
     <?php endif; ?>
   </section>
