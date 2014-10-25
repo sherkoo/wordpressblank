@@ -3,6 +3,10 @@
 <head>
   <title><?php the_title(); ?> - <?php echo get_bloginfo('name'); ?></title>
   <?php wp_head(); ?>
+
+  <!-- meta -->
+  <meta name="description" content="<?php meta_description(); ?>" />
+  
 </head>
 <body>
 
