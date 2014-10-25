@@ -40,7 +40,17 @@ Meta Description
 ================================================== */
 
 function meta_description() {
-  echo 'yes';
+  if(is_home()){
+    bloginfo('description');
+  } else {
+    if(have_posts()) :
+      while(have_posts()) :
+        the_post();
+        $content = get_the_content(); 
+        echo wp_filter_nohtml_kses( $content ); //or strip_tags
+      endwhile; // end while
+    endif; // end if
+  }
 }
 
 ?>
