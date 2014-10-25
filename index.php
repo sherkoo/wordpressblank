@@ -8,15 +8,15 @@
 
       <article>
         <?php if(is_page()) : ?>
-          <?php get_template_part('inc/page'); ?>
+          <?php get_template_part('assets/inc/page'); ?>
         <?php endif; ?>
 
         <?php if(is_single()) : ?>
-          <?php get_template_part('inc/single'); ?>
+          <?php get_template_part('assets/inc/single'); ?>
         <?php endif; ?>
 
         <?php if(is_home()) : ?>
-          <?php get_template_part('inc/home'); ?>
+          <?php get_template_part('assets/inc/home'); ?>
         <?php endif; ?>
       </article>
 
