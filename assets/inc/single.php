@@ -4,4 +4,8 @@
 </header>
 <?php the_content(); ?>
 
+<footer>
+  <?php comments_template(); ?>
+</footer>
+
 <?php get_sidebar(); ?>
