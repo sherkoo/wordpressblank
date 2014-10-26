@@ -9,8 +9,8 @@ Menus
 function register_my_menus() {
   register_nav_menus(
     array(
-      'primary-menu' => __( 'Primary Menu' ),
-      'extra-menu' => __( 'Extra Menu' )
+      'primary-menu'  => __('Primary Menu'),
+      'footer-menu' => __('Footer Menu')
     )
   );
 }
@@ -27,8 +27,10 @@ function theme_slug_widgets_init() {
       'name' => __( 'Main Sidebar', 'theme-slug' ),
       'id' => 'sidebar-1',
       'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-      'before_title' => '',
-      'after_title' => '',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>',
+      'before_widget' => '',
+      'after_widget' => '',
   ) );
 }
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
@@ -47,7 +49,7 @@ function meta_description() {
       while(have_posts()) :
         the_post();
         $content = get_the_content(); 
-        echo wp_filter_nohtml_kses( $content ); //or strip_tags
+        echo wp_filter_nohtml_kses($content);
       endwhile; // end while
     endif; // end if
   }
