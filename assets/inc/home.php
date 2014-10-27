@@ -11,6 +11,6 @@
 <?php endif; ?>
 <!-- /post thumbnail -->
 
-<?php edit_post_link(); ?>
-
 <?php the_content(); ?>
+
+<?php edit_post_link(); ?>
