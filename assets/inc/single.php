@@ -8,4 +8,6 @@
   <?php comments_template(); ?>
 </footer>
 
+<?php edit_post_link(); ?>
+
 <?php get_sidebar(); ?>
