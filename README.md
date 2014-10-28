@@ -1,7 +1,7 @@
 Wordpress Blank
 ==============
 
-This theme is meant to be barebones with minimal features. In no way shape or form is it meant to please everyone. Functions should be added as needed.
+This theme is meant to be barebones with minimal features. Functions and features should be added only as needed instead of starting with something bloated.
 
 Includes
 =
