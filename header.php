@@ -8,7 +8,7 @@
   <meta name="description" content="<?php meta_description(); ?>" />
   
 </head>
-<body>
+<body <?php body_class(); ?>>
 
   <header role="banner">
     <h1 id="logo"><a href="<?php echo get_bloginfo('home'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
