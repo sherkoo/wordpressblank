@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 <head>
   <!-- Title -->
   <title><?php the_title(); ?> - <?php echo get_bloginfo('name'); ?></title>
@@ -18,6 +18,9 @@
   <!-- Favicon -->
   <link href="<?php echo get_template_directory_uri(); ?>assets/img/icons/favicon.ico" rel="shortcut icon">
   <link href="<?php echo get_template_directory_uri(); ?>assets/img/icons/favicon.png" rel="apple-touch-icon-precomposed">
+
+  <!-- Style -->
+
 
   <?php wp_head(); ?>
 </head>
