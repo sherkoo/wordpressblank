@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* ==================================================
 
@@ -63,7 +63,7 @@ function meta_description() {
     if(have_posts()) :
       while(have_posts()) :
         the_post();
-        $content = get_the_content(); 
+        $content = get_the_content();
         echo wp_filter_nohtml_kses($content);
       endwhile; // end while
     endif; // end if

@@ -5,9 +5,18 @@
 
 <?php the_content(); ?>
 
+<div>
+
+    <?php previous_post(); ?>
+
+    <?php next_post(); ?>
+
+</div>
+
 <footer>
   <?php comments_template(); ?>
 </footer>
+
 
 <?php edit_post_link(); ?>
 

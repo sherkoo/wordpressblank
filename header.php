@@ -18,7 +18,7 @@
   <!-- Favicon -->
   <link href="<?php echo get_template_directory_uri(); ?>assets/img/icons/favicon.ico" rel="shortcut icon">
   <link href="<?php echo get_template_directory_uri(); ?>assets/img/icons/favicon.png" rel="apple-touch-icon-precomposed">
-  
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
