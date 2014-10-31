@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- main -->
-<main role="main">
+<main role="main" class="container">
   <section>
     <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
