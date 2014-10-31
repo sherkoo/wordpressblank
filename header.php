@@ -20,7 +20,7 @@
   <link href="<?php echo get_template_directory_uri(); ?>assets/img/icons/favicon.png" rel="apple-touch-icon-precomposed">
 
   <!-- Style -->
-
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
   <?php wp_head(); ?>
 </head>
