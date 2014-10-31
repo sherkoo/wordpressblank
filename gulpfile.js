@@ -54,9 +54,9 @@ gulp.task('compass', function(){
 // task: css
 gulp.task('css', function(){
   return gulp.src('assets/css/libs/*.css')
-    .pipe(concat('main.min.css'))
+    .pipe(concat('style.css'))
     .pipe(minify())
-    .pipe(gulp.dest('assets/css/min'))
+    .pipe(gulp.dest('./'))
     .pipe(livereload());
 });
 
