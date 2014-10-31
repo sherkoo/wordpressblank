@@ -26,7 +26,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-  <header role="banner">
+  <header role="banner" class="container">
     <h1 id="logo"><a href="<?php echo get_bloginfo('home'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
     <nav role="navigation">
       <?php wp_nav_menu( array( 'theme_location' => 'primary-menu') ); ?>
