@@ -13,3 +13,9 @@ Recommended Plugins
 --
 - Yoast SEO Plugin
 - W3 Total Cache
+
+Setup
+--
+Compile it with sass --watch assets/stylesheeotstrap.scss:style.css --style compressed
+
+menus > assign primary menu

@@ -26,9 +26,30 @@
 </head>
 <body <?php body_class(); ?>>
 
-  <header role="banner" class="container">
-    <h1 id="logo"><a href="<?php echo get_bloginfo('home'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
-    <nav role="navigation">
-      <?php wp_nav_menu( array( 'theme_location' => 'primary-menu') ); ?>
-    </nav>
-  </header>
+<!-- header -->
+<header role="banner" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="row">
+      <a href="<?php echo get_bloginfo('home'); ?>" class="navbar-brand"><?php echo get_bloginfo('name'); ?></a>
+
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+      <nav role="navigation" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <?php
+          $args = array(
+            'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+            'theme_location' => 'primary-menu'
+          );
+        ?>
+        <?php wp_nav_menu($args); ?>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
