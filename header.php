@@ -26,30 +26,29 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- header -->
-<header role="banner" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="row">
-      <a href="<?php echo get_bloginfo('home'); ?>" class="navbar-brand"><?php echo get_bloginfo('name'); ?></a>
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-
-      <nav role="navigation" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<?php echo bloginfo('home'); ?>"><?php echo bloginfo('name'); ?></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <?php
-          $args = array(
-            'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
-            'theme_location' => 'primary-menu'
-          );
-        ?>
+            $args = array(
+              'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+              'theme_location' => 'primary-menu'
+            );
+          ?>
         <?php wp_nav_menu($args); ?>
-      </nav>
-    </div>
-  </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 </header>
-<!-- /header -->
