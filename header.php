@@ -42,11 +42,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <?php
-            $args = array(
-              'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
-              'theme_location' => 'primary-menu'
-            );
-          ?>
+          $args = array(
+            'items_wrap' => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+            'theme_location' => 'primary-menu'
+          );
+        ?>
         <?php wp_nav_menu($args); ?>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
