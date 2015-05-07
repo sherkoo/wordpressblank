@@ -1,7 +1,5 @@
 <?php
 
-
-
 /**
  * Theme Support
  */
@@ -15,11 +13,9 @@ add_image_size('medium', 250, '', true); // Medium Thumbnail
 add_image_size('small', 120, '', true); // Small Thumbnail
 add_image_size('custom-size', 700, 200, true); // Custom Thumbnail
 
-/* ==================================================
-
-Menus
-
-================================================== */
+/**
+ * Menus
+ */
 
 function register_my_menus() {
   register_nav_menus(
@@ -31,11 +27,9 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-/* ==================================================
-
-Sidebar Widgets
-
-================================================== */
+/**
+ * Sidebar Widgets
+ */
 
 function theme_slug_widgets_init() {
   register_sidebar( array(
@@ -50,11 +44,9 @@ function theme_slug_widgets_init() {
 }
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
-/* ==================================================
-
-Meta Description
-
-================================================== */
+/**
+ * Meta Description
+ */
 
 function meta_description() {
   if(is_home()){
