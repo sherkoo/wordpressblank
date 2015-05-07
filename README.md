@@ -19,3 +19,7 @@ Setup
 Compile it with sass --watch assets/stylesheeotstrap.scss:style.css --style compressed
 
 menus > assign primary menu
+
+Custom Post Types
+--
+http://generatewp.com/post-type/
