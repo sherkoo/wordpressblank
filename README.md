@@ -3,7 +3,10 @@
 This theme is meant to be a barebones, wordpress theme with minimal features. This allows developers to add features as needed, and build up.
 
 ## Prerequisites
-
+- Ruby 2.0 or higher
+- Sass
+- PHP4 or higher
+- Wordpress
 
 ## Notes
 - Semantic HTML5
