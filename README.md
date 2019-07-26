@@ -1,25 +1,26 @@
-Wordpress Blank
-==============
+# Wordpress Blank Theme
 
-This theme is meant to be barebones with minimal features. Functions and features should be added only as needed instead of starting with something bloated.
+This theme is meant to be a barebones, wordpress theme with minimal features. This allows developers to add features as needed, and build up.
 
-Includes
---
-- Totally blank theme setup for developers to start building
+## Prerequisites
+
+
+## Notes
 - Semantic HTML5
 - Gulpfile.js
 
-Recommended Plugins
---
+## Recommended (But not required) Plugins 
+
 - Yoast SEO Plugin
 - W3 Total Cache
+- Advanced Custom Fields
 
-Setup
---
+## Setup
+
 Compile it with sass --watch assets/stylesheeotstrap.scss:style.css --style compressed
 
 menus > assign primary menu
 
-Custom Post Types
---
+# Custom Post Types
+
 http://generatewp.com/post-type/
